@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Stylish Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="grid-container">
+    <div><h1>Say Hello!</h1></div>
+    <form action="Say Hello" class="grid-auto-flow">
+      <label for="yourname">Your Name</label>
+
+      <input
+        type="text"
+        id="yourname"
+        name="yourname"
+        placeholder="Enter your name"
+        minlength="6"
+        maxlength="12"
+        required
+      />
+      <label for="email">Email</label>
+      <input
+        type="Email"
+        id="email"
+        name="email"
+        placeholder="Enter your email address"
+        minlength="10"
+        maxlength="20"
+        required
+      />
+      <label for="services">Needed Services</label>
+      <select name="Needed Services" id="Needed Services" required>
+        <option value="">Choose Services</option>
+        <option value="money">Moneybox</option>
+        <option value="isa">ISA Savings</option>
+        <option value="kids">Jeremy</option>
+      </select>
+      <label for="budget">Budget</label>
+      <select name="budget" id="budget" required>
+        <option value="">Choose Budget</option>
+        <option value="money">£5</option>
+        <option value="isa">£10</option>
+        <option value="kids">£15</option>
+      </select>
+      <label for="message">Message</label>
+
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Your message here.."
+        cols="20"
+        rows="10"
+      ></textarea>
+
+      <button type="submit">
+        <strong class="submit-text">Submit</strong>
+      </button>
+    </form>
+  </body>
+</html>
